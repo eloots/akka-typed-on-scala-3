@@ -5,14 +5,16 @@ import akka.actor.typed.scaladsl.Behaviors
 
 object Pinger {
 
+  // My protocol
   sealed trait Command
   case object SendPing extends Command
   case object StopPingPong extends Command
-  final case class WrappedPongResponse(pong: PingPong.Response) extends Command
 
-  def apply(pingPong: ActorRef[PingPong.Ping]): Behavior[Command] = Behaviors.setup { context =>
-    val pongResponseMapper: ActorRef[PingPong.Response] =
-      context.messageAdapter(response => WrappedPongResponse(response))
+  // My protocol + the responses I need to understand...
+  type CommandsAndResponses = Command | PingPong.Response
+
+
+  def apply(pingPong: ActorRef[PingPong.Ping]): Behavior[CommandsAndResponses] = Behaviors.setup { context =>
 
     Behaviors.receiveMessage {
       case StopPingPong =>
@@ -20,9 +22,9 @@ object Pinger {
         context.system.terminate()
         Behaviors.stopped
       case SendPing =>
-        pingPong ! PingPong.Ping(replyTo = pongResponseMapper)
+        pingPong ! PingPong.Ping(replyTo = context.self)
         Behaviors.same
-      case WrappedPongResponse(response) =>
+      case response : PingPong.Response =>
         context.log.info(s"Hey: I just received a $response !!!")
         Behaviors.same
     }
