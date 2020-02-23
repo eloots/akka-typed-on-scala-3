@@ -1,4 +1,4 @@
-val dottyVersion = "0.21.0-RC1"
+val dottyVersion = "0.22.0-RC1"
 
 lazy val root = project
   .in(file("."))
@@ -6,11 +6,14 @@ lazy val root = project
     name := "dotty-simple",
     version := "0.1.0",
 
+    //scalaVersion := dottyLatestNightlyBuild.get,
     scalaVersion := dottyVersion,
 
-    libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test",
+    libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3",
 
-    libraryDependencies += ("com.typesafe.akka" %% "akka-actor-typed" % "2.6.1").withDottyCompat(scalaVersion.value),
-    libraryDependencies += ("com.typesafe.akka" %% "akka-slf4j" % "2.6.1").withDottyCompat(scalaVersion.value),
-    libraryDependencies += ("ch.qos.logback"     % "logback-classic" % "1.2.3").withDottyCompat(scalaVersion.value)
+    libraryDependencies ++= Seq(
+       "com.typesafe.akka" %% "akka-actor-typed" % "2.6.1",
+       "com.typesafe.akka" %% "akka-slf4j"       % "2.6.1",
+       "org.scalatest"     %% "scalatest"        % "3.1.0" % "test",
+    ).map(_.withDottyCompat(scalaVersion.value))
   )
