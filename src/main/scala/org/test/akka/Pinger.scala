@@ -5,14 +5,20 @@ import akka.actor.typed.scaladsl.Behaviors
 
 object Pinger {
 
+  enum Command {
+    case SendPing
+    case StopPingPong
+  }
+
   // My protocol
-  sealed trait Command
-  case object SendPing extends Command
-  case object StopPingPong extends Command
+  // sealed trait Command
+  // case object SendPing extends Command
+  // case object StopPingPong extends Command
 
   // My protocol + the responses I need to understand...
   type CommandsAndResponses = Command | PingPong.Response
 
+  export Command._
 
   def apply(pingPong: ActorRef[PingPong.Ping]): Behavior[CommandsAndResponses] = Behaviors.setup { context =>
 

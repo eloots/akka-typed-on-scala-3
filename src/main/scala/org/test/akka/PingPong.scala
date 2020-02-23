@@ -5,12 +5,15 @@ import akka.actor.typed.scaladsl.Behaviors
 
 object PingPong {
 
+  enum Command {
+    case Ping(replyTo: ActorRef[Response])
+  }
+  export Command._
 
-  sealed trait Command
-  final case class Ping(replyTo: ActorRef[Response]) extends Command
-
-  sealed trait Response
-  case object Pong extends Response
+  enum Response {
+    case Pong
+  }
+  export Response._
 
   def apply(): Behavior[Command] = Behaviors.setup { context =>
     (new PingPong).run()
