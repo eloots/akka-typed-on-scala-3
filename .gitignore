@@ -5,6 +5,10 @@ hypriot.img
 collectedLogs/
 collectedLogs.zip
 
+# Dotty IDE specific
+.dotty-ide-artifact
+.dotty-ide.json
+
 # sbt specific
 .cache/
 .history/
