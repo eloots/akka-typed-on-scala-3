@@ -1,19 +1,25 @@
 val dottyVersion = "0.22.0-RC1"
+//val selectedScalaVersion = dottyVersion
+val selectedScalaVersion = dottyLatestNightlyBuild.get
 
-lazy val root = project
-  .in(file("."))
-  .settings(
+lazy val root_project = (project.in(file(".")))
+  .aggregate(
+    common,
+    exercise
+  ).settings(
     name := "dotty-simple",
     version := "0.1.0",
-
     //scalaVersion := dottyLatestNightlyBuild.get,
-    scalaVersion := dottyVersion,
+    scalaVersion := selectedScalaVersion,
+  ).settings(CommonSettings.commonSettings: _*)
 
-    libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3",
+lazy val common = project
+  .settings(scalaVersion := selectedScalaVersion)
+  .settings(CommonSettings.commonSettings: _*)
 
-    libraryDependencies ++= Seq(
-       "com.typesafe.akka" %% "akka-actor-typed" % "2.6.1",
-       "com.typesafe.akka" %% "akka-slf4j"       % "2.6.1",
-       "org.scalatest"     %% "scalatest"        % "3.1.0" % "test",
-    ).map(_.withDottyCompat(scalaVersion.value))
-  )
+
+lazy val exercise = project
+  .settings(scalaVersion := selectedScalaVersion)
+  .settings(CommonSettings.commonSettings: _*)
+  .dependsOn(common % "test->test;compile->compile")
+
