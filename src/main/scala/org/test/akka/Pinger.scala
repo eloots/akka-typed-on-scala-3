@@ -16,11 +16,11 @@ object Pinger {
   // case object StopPingPong extends Command
 
   // My protocol + the responses I need to understand...
-  type CommandsAndResponses = Command | PingPong.Response
+  private type CommandsAndResponses = Command | PingPong.Response
 
   export Command._
 
-  def apply(pingPong: ActorRef[PingPong.Ping]): Behavior[CommandsAndResponses] = Behaviors.setup { context =>
+  def apply(pingPong: ActorRef[PingPong.Ping]): Behavior[Command] = Behaviors.setup[CommandsAndResponses]{ context =>
 
     Behaviors.receiveMessage {
       case StopPingPong =>
@@ -34,6 +34,6 @@ object Pinger {
         context.log.info(s"Hey: I just received a $response !!!")
         Behaviors.same
     }
-  }
+  }.narrow
 }
 
