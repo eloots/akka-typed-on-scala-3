@@ -5,6 +5,11 @@ hypriot.img
 collectedLogs/
 collectedLogs.zip
 
+# Metals/Bloop specific
+.metals/
+.bloop/
+project/metals.sbt
+
 # Dotty IDE specific
 .dotty-ide-artifact
 .dotty-ide.json
