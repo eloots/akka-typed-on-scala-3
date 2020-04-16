@@ -10,7 +10,7 @@ object MainPingPong {
     val pingPong = context.spawn(PingPong(), "ping-pong")
     val pinger = context.spawn(Pinger(pingPong), "pinger")
 
-    for (_ <- 1 to 10) {
+    for (_ <- 1 to 3) {
       pinger ! Pinger.SendPing
       Thread.sleep(1000)
     }
