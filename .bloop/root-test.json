@@ -1,0 +1,387 @@
+{
+    "version": "1.1.2",
+    "project": {
+        "name": "root-test",
+        "directory": "/Users/ericloots/Trainingen/LBT/dottyAkkatest",
+        "workspaceDir": "/Users/ericloots/Trainingen/LBT/dottyAkkatest",
+        "sources": [
+            "/Users/ericloots/Trainingen/LBT/dottyAkkatest/src/test/scala-0.23",
+            "/Users/ericloots/Trainingen/LBT/dottyAkkatest/src/test/scala",
+            "/Users/ericloots/Trainingen/LBT/dottyAkkatest/src/test/java",
+            "/Users/ericloots/Trainingen/LBT/dottyAkkatest/target/scala-0.23/src_managed/test"
+        ],
+        "dependencies": [
+            "root"
+        ],
+        "classpath": [
+            "/Users/ericloots/Trainingen/LBT/dottyAkkatest/.bloop/root/scala-0.23/classes",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.0/config-1.4.0.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.13/0.9.0/scala-java8-compat_2.13-0.9.0.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.1/scala-library-2.13.1.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.13/2.6.3/akka-slf4j_2.13-2.6.3.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.1.0/scalatest-compatible-3.1.0.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.6.3/akka-actor_2.13-2.6.3.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_2.13/2.6.3/akka-actor-typed_2.13-2.6.3.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.1.0/scalactic_2.13-3.1.0.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.1/scala-reflect-2.13.1.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/lamp/dotty-library_0.23/0.23.0-RC1/dotty-library_0.23-0.23.0-RC1.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.1.0/scalatest_2.13-3.1.0.jar",
+            "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar"
+        ],
+        "out": "/Users/ericloots/Trainingen/LBT/dottyAkkatest/.bloop/root",
+        "classesDir": "/Users/ericloots/Trainingen/LBT/dottyAkkatest/.bloop/root/scala-0.23/test-classes",
+        "resources": [
+            "/Users/ericloots/Trainingen/LBT/dottyAkkatest/src/test/resources",
+            "/Users/ericloots/Trainingen/LBT/dottyAkkatest/target/scala-0.23/resource_managed/test"
+        ],
+        "scala": {
+            "organization": "ch.epfl.lamp",
+            "name": "scala-compiler",
+            "version": "0.23.0-RC1",
+            "options": [
+                
+            ],
+            "jars": [
+                "/Users/ericloots/.ivy2/cache/ch.epfl.lamp/dotty-compiler_0.23/jars/dotty-compiler_0.23-0.23.0-RC1.jar",
+                "/Users/ericloots/.ivy2/cache/ch.epfl.lamp/dotty-interfaces/jars/dotty-interfaces-0.23.0-RC1.jar",
+                "/Users/ericloots/.ivy2/cache/ch.epfl.lamp/dotty-library_0.23/jars/dotty-library_0.23-0.23.0-RC1.jar",
+                "/Users/ericloots/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.1.jar",
+                "/Users/ericloots/.ivy2/cache/ch.epfl.lamp/tasty-core_0.23/jars/tasty-core_0.23-0.23.0-RC1.jar",
+                "/Users/ericloots/.ivy2/cache/org.scala-lang.modules/scala-asm/bundles/scala-asm-7.3.1-scala-1.jar",
+                "/Users/ericloots/.ivy2/cache/org.scala-sbt/compiler-interface/jars/compiler-interface-1.2.5.jar",
+                "/Users/ericloots/.ivy2/cache/org.scala-sbt/util-interface/jars/util-interface-1.2.2.jar",
+                "/Users/ericloots/.ivy2/cache/org.jline/jline-reader/jars/jline-reader-3.9.0.jar",
+                "/Users/ericloots/.ivy2/cache/org.jline/jline-terminal/jars/jline-terminal-3.9.0.jar",
+                "/Users/ericloots/.ivy2/cache/org.jline/jline-terminal-jna/jars/jline-terminal-jna-3.9.0.jar",
+                "/Users/ericloots/.ivy2/cache/net.java.dev.jna/jna/jars/jna-4.2.2.jar"
+            ],
+            "analysis": "/Users/ericloots/Trainingen/LBT/dottyAkkatest/target/streams/test/bloopAnalysisOut/_global/streams/inc_compile_0.23.zip",
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": false,
+                "filterLibraryFromClasspath": false
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+                "options": [
+                    "-Duser.dir=/Users/ericloots/Trainingen/LBT/dottyAkkatest"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.13",
+                    "version": "1.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.13",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "config",
+                    "version": "1.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "config",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.0/config-1.4.0.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.0/config-1.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-java8-compat_2.13",
+                    "version": "0.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-java8-compat_2.13",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.13/0.9.0/scala-java8-compat_2.13-0.9.0.jar"
+                        },
+                        {
+                            "name": "scala-java8-compat_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.13/0.9.0/scala-java8-compat_2.13-0.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.1/scala-library-2.13.1.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.1/scala-library-2.13.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-classic",
+                    "version": "1.2.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-classic",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.30",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-slf4j_2.13",
+                    "version": "2.6.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-slf4j_2.13",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.13/2.6.3/akka-slf4j_2.13-2.6.3.jar"
+                        },
+                        {
+                            "name": "akka-slf4j_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.13/2.6.3/akka-slf4j_2.13-2.6.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-compatible",
+                    "version": "3.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-compatible",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.1.0/scalatest-compatible-3.1.0.jar"
+                        },
+                        {
+                            "name": "scalatest-compatible",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.1.0/scalatest-compatible-3.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-actor_2.13",
+                    "version": "2.6.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-actor_2.13",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.6.3/akka-actor_2.13-2.6.3.jar"
+                        },
+                        {
+                            "name": "akka-actor_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.6.3/akka-actor_2.13-2.6.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-actor-typed_2.13",
+                    "version": "2.6.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-actor-typed_2.13",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_2.13/2.6.3/akka-actor-typed_2.13-2.6.3.jar"
+                        },
+                        {
+                            "name": "akka-actor-typed_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_2.13/2.6.3/akka-actor-typed_2.13-2.6.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalactic",
+                    "name": "scalactic_2.13",
+                    "version": "3.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalactic_2.13",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.1.0/scalactic_2.13-3.1.0.jar"
+                        },
+                        {
+                            "name": "scalactic_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.1.0/scalactic_2.13-3.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.1/scala-reflect-2.13.1.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.1/scala-reflect-2.13.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.epfl.lamp",
+                    "name": "dotty-library_0.23",
+                    "version": "0.23.0-RC1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "dotty-library_0.23",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/lamp/dotty-library_0.23/0.23.0-RC1/dotty-library_0.23-0.23.0-RC1.jar"
+                        },
+                        {
+                            "name": "dotty-library_0.23",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/lamp/dotty-library_0.23/0.23.0-RC1/dotty-library_0.23-0.23.0-RC1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest_2.13",
+                    "version": "3.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest_2.13",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.1.0/scalatest_2.13-3.1.0.jar"
+                        },
+                        {
+                            "name": "scalatest_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.1.0/scalatest_2.13-3.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-core",
+                    "version": "1.2.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-core",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "classifier": "sources",
+                            "path": "/Users/ericloots/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
